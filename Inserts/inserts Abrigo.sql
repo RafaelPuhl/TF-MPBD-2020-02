@@ -14,3 +14,5 @@ VALUES(4,'Abrigo 4', 112, 'Rua Manoel Arruda', 'Porto Alegre','RS');
 
 INSERT INTO BJ204236.abrigo
 VALUES(5,'Abrigo 5', 2233, 'Av Brasil', 'Gravataí','RS');
+
+commit;
