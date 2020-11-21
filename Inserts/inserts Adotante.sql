@@ -29,3 +29,5 @@ VALUES(35383016031,'Kieza Campos Brás', '31/01/1979', 8893, 'Av Cargueiro', 'Sa
 
 INSERT INTO BJ204236.adotante
 VALUES(79939752040,'Dina Domingues Ávila', '31/03/1985', 323, 'Av Cargueiro', 'Sapiranga','RS');
+
+commit;
