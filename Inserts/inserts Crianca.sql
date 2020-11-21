@@ -27,3 +27,5 @@ values ('Bruce Dickinson', '14/12/2013', 'M');
 
 insert into BJ204236.CRIANCA (NOME, DATA_NASCIMENTO, SEXO)
 values ('Bob Marley', '28/11/2011', 'M');
+
+commit;
