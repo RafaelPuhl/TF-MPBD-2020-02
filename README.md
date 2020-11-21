@@ -1,5 +1,6 @@
 # TF-MPBD-2020-02
 Trabalho Final de Modelagem e Projeto de Banco de Dados
+
 Regras:
 Pasta criacao-banco:
 Criar um arquivo .sql com todos os scripts para criacao do banco(salvo triggers).
