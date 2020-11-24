@@ -8,7 +8,8 @@ create table adotante
     edr_numero      numeric(6)   not null,
     edr_rua         varchar(100) not null,
     edr_cidade      varchar(100) not null,
-    edr_uf          varchar(2)   not null
+    edr_uf          varchar(2)   not null,
+    cpf_conjuge numeric(11)
 );
 
 alter table adotante
@@ -115,7 +116,7 @@ create table historico_adotante
 (
     id_historico numeric(3)    not null,
     descricao    varchar(4000) not null,
-    cpf          numeric(6)    not null,
+    cpf          numeric(11)    not null,
     cress        numeric(6)    not null,
     cress_uf     varchar(2)    not null
 );

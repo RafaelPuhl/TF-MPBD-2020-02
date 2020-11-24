@@ -19,7 +19,7 @@ alter table telefone_adotante
             references adotante (cpf);
 
 alter table movimentacao_processo
-    add constraint fk_num_processl
+    add constraint fk_num_processo
         foreign key (num_processo)
             references processo_adocao (num_processo);
 
@@ -47,6 +47,11 @@ alter table historico_adotante
     add constraint fk_cress_historico_adotante
         foreign key (cress)
             references assistente_social (cress);
+            
+alter table ADOTANTE
+    add constraint fk_adotante_conjege
+        foreign key (cpf_conjuge)
+            references  ADOTANTE(CPF);
 --/////////////////////////////////////////////////////////////////
 create sequence seq_criancas;
 create sequence seq_abrigo;
@@ -63,6 +68,6 @@ alter table BJ204236.JUIZ
     modify (id_juiz numeric(6) default seq_juiz.nextval);
 
 alter table BJ204236.FORUM
-    modify (id_forum numeric(4) default seq_criancas.nextval);
+    modify (id_forum numeric(4) default seq_forum.nextval);
 --/////////////////////////////////////////////////////////////////
 commit;
