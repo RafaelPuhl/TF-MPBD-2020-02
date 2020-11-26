@@ -52,6 +52,12 @@ alter table ADOTANTE
     add constraint fk_adotante_conjege
         foreign key (cpf_conjuge)
             references  ADOTANTE(CPF);
+            
+alter table CRIANCA
+    add constraint fk_abrigo_crianca
+        foreign key (ID_ABRIGO)
+            references  ABRIGO(ID_ABRIGO);
+
 --/////////////////////////////////////////////////////////////////
 create sequence seq_criancas;
 create sequence seq_abrigo;

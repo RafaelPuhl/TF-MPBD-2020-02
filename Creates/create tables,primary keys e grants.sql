@@ -28,17 +28,6 @@ alter table telefone_adotante
     add constraint pk_id_telefone
         primary key (id_telefone);
 --////////////////////////////////////////////////////////////////
-create table psicologo
-(
-    crp    numeric(6)   not null,
-    crp_uf varchar(2)   not null,
-    nome   varchar(100) not null
-);
-
-alter table psicologo
-    add constraint pk_cdp_psicologo
-        primary key (crp);
---/////////////////////////////////////////////////////////////////
 create table assistente_social
 (
     cress    numeric(6)   not null,
@@ -65,7 +54,8 @@ create table crianca
     id_crianca      numeric(6)   not null,
     nome            varchar(100) not null,
     data_nascimento date         not null,
-    sexo            char(1)      not null
+    sexo            char(1)      not null,
+    id_abrigo       numeric(4)   not null
 );
 
 alter table crianca
@@ -164,7 +154,6 @@ grant all privileges on historico_crianca to BJ103859;
 grant all privileges on juiz to BJ103859;
 grant all privileges on movimentacao_processo to BJ103859;
 grant all privileges on processo_adocao to BJ103859;
-grant all privileges on psicologo to BJ103859;
 grant all privileges on telefone_adotante to BJ103859;
 
 grant all privileges on abrigo to AF105742;
@@ -177,7 +166,6 @@ grant all privileges on historico_crianca to AF105742;
 grant all privileges on juiz to AF105742;
 grant all privileges on movimentacao_processo to AF105742;
 grant all privileges on processo_adocao to AF105742;
-grant all privileges on psicologo to AF105742;
 grant all privileges on telefone_adotante to AF105742;
 
 grant all privileges on abrigo to BJ105717;
@@ -190,7 +178,6 @@ grant all privileges on historico_crianca to BJ105717;
 grant all privileges on juiz to BJ105717;
 grant all privileges on movimentacao_processo to BJ105717;
 grant all privileges on processo_adocao to BJ105717;
-grant all privileges on psicologo to BJ105717;
 grant all privileges on telefone_adotante to BJ105717;
 --/////////////////////////////////////////////////////////////////
 commit;
