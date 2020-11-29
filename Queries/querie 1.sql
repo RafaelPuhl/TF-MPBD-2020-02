@@ -1,4 +1,4 @@
---Liste o nome das partes participantes dos processos de adoção, cuja data de termino é igual ou maior que 2016, juntamente do historico de cada uma das partes.
+--Liste o nome das partes participantes dos processos de adoção, cuja data de termino do processo é igual ou maior que 2016, juntamente do historico de cada uma das partes.
 select ado.NOME,
        cri.NOME,
        hc.DESCRICAO as Historico_da_Criança,
