@@ -56,7 +56,8 @@ alter table ADOTANTE
 alter table CRIANCA
     add constraint fk_abrigo_crianca
         foreign key (ID_ABRIGO)
-            references  ABRIGO(ID_ABRIGO);
+            references  ABRIGO(ID_ABRIGO)
+            on delete cascade;
 
 --/////////////////////////////////////////////////////////////////
 create sequence seq_criancas;
