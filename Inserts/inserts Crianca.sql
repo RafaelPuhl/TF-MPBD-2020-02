@@ -28,6 +28,7 @@ values ('Bruce Dickinson', '14/12/2013', 'M', 3);
 insert into BJ204236.CRIANCA (NOME, DATA_NASCIMENTO, SEXO, id_abrigo)
 values ('Bob Marley', '28/11/2011', 'M', 4);
 
-select * from BJ204236.crianca;
+insert into BJ204236.CRIANCA(NOME, DATA_NASCIMENTO, SEXO, ID_ABRIGO)
+values ('Justine Privee', '24/10/1996', 'F', 1);
 
 commit;
