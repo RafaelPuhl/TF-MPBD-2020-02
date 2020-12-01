@@ -36,7 +36,8 @@ alter table historico_adotante
 alter table historico_crianca
     add constraint fk_id_crianca_historico
         foreign key (id_crianca)
-            references crianca (id_crianca);
+            references crianca (id_crianca)
+            ON DELETE CASCADE;
 
 alter table historico_crianca
     add constraint fk_cress
